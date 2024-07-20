@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-900 h-full overflow-x-hidden;
+  color: aliceblue;
+}
+#__next {
+  @apply h-full;
+}
+html {
+  @apply h-full;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.cardContainer {
+  max-width: 230px;
+  width: 230px;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.cardContainer img {
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.cardContainer .hoverCard {
+  z-index: 90;
+  height: max-content;
+  width: 20rem;
+  position: absolute;
+  top: -18vh;
+  left: 0;
+  border-radius: 0.3rem;
+  background-color: #181818;
+  transition: 0.3s ease-in-out;
+}
+.cardContainer .videoContainer {
+  position: relative;
+  height: 140px;
+}
+
+.cardContainer .videoContainer video {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  top: 0;
+  z-index: 5;
+  position: absolute;
+}
